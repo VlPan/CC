@@ -43,6 +43,9 @@ var arr2 = arr1.reverse().push(123)
 console.log(arr1);
 console.log(arr2);
 
+// 3, 2, 1, 123
+// 4
+
 // how to check array has empty spots??
 // forEach map etc will ignore empty spots. Common loop would not
 // (Object.values(array).length === array.length or array.includes(undefined);)

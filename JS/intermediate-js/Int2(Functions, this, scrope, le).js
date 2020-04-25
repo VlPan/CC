@@ -57,6 +57,7 @@ X();
 
 magic();
 magic();
+// X Y X X
 
 /* EXERCISE  - we have function x*/
 let x = () => this;

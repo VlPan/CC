@@ -52,7 +52,6 @@ console.log(a);
 
 if (true) {
   var a = b = 0;
-  return a;
 }
 
 console.log(b);
@@ -168,3 +167,18 @@ var obj = {
 }
 
 var a = Symbol();
+
+
+if(new Boolean(false)) {
+  console.log(true)
+ }
+ // true
+
+
+var x = 1;
+if(false) {
+    var x  = 10;
+}
+
+console.log(x)
+// 1

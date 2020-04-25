@@ -16,6 +16,8 @@ Location.replace() // Same as assign but remove page from SessionHistory (user c
 Location.toString()
 Location.reload()
 
+// location vs history
+
 window.location.pathname = '123'
 
 window.location.hash = '123'
