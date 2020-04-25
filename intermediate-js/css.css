@@ -1,0 +1,6 @@
+:not([myAttribute]) .inner_child {
+    border: 1px solid red;
+}
+/* .parent:not([myAttribute])  .inner_child {
+    border: 1px solid red;
+} */
