@@ -1,0 +1,9 @@
+https://www.movies.com:443/movies/index.html?type=horror&imdb=8#Blockbusters
+
+https - protocol
+www.movies.com - domain
+.com - top level domain
+443 = port 
+/movies/index.html - path to the web resource
+?type=horror&imdb=8 - parameters (query string)
+#Blockbusters - anchor
