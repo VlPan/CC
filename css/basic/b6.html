@@ -1,0 +1,92 @@
+<!-- Form, Input Tags  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="f">
+        <!-- Radio / Checkboxes shout have the same name -->
+        <!-- id - for combination -->
+        <!-- You can style the email input field for different validation states, when an value is entered using the
+             :valid, :invalid or :required pseudo-classes -->
+
+        <!-- grouping with fieldset and legend-->
+    <fieldset> 
+        <legend>Contact Details</legend>
+        <label>Username: <input type="text"></label>
+        <label>Password: <input type="password"></label>
+    </fieldset>
+
+        <input type="checkbox" name="sport" value="soccer">
+        <label for="soccer">soccer</label>
+        <input type="checkbox" name="sport" value="fotbol" checked>
+        <label for="fotbol">fotbol</label>
+        <input type="checkbox" name="sport" value="hockey">
+        <label for="hockey">hockey</label>
+
+        <input type="radio" name="gender" id="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="Female">Female</label>
+
+        <input type="reset" value="reset">
+
+        <input type="file" value="file">
+
+        <label for="mycolor">Select Color:</label>
+        <input type="color" value="#00ff00" id="mycolor">
+
+        <input type="email" value="email">
+
+        <input type="range" value="range">
+
+        <input type="time" value="time">
+
+        <input type="date" value="date">
+
+        <input type="month" value="month">
+
+        <input type="search" value="search">
+
+        <label for="myurl">Enter Website URL:</label>
+        <input type="url" id="myurl" required>
+
+        <input type="datetime-local" value="datetime-local">
+
+        <label for="mynumber">Enter a Number:</label>
+        <input type="number" min="1" max="10" step="0.5" id="mynumber">
+
+        <input type="tel" value="tel">
+
+        <input type="week" value="week">
+
+        <label for="address">Address:</label>
+    <textarea rows="3" cols="30" name="address" id="address"></textarea>
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <!--
+
+name	Specifies the name of the form.
+action	Specifies the URL of the program or script on the web server that will be used for processing the information submitted via form.
+method	Specifies the HTTP method used for sending the data to the web server by the browser. The value can be either get (the default) and post.
+target	Specifies where to display the response that is received after submitting the form. Possible values are _blank, _self, _parent and _top.
+enctype	Specifies how the form data should be encoded when submitting the form to the server. Applicable only when the value of the method attribute is post.
+
+    -->
+
+    <script>
+        console.log(f);
+    </script>
+</body>
+</html>
+
+
+

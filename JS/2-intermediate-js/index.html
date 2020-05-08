@@ -34,6 +34,15 @@
         </div>
     </div>
     
-    <script src="test.js"></script>
+    <script>
+        window.__PRELOADED_STATE__ = $(JSON.stringify(
+            {
+                user: {
+                    username: "NodeSecurity",
+                    bio: "as</script><script>alert('You have an XSS vulnerability!')</script>"
+                }
+            }
+        ));
+    </script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!-- Box and Text Shadow -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 
+    <div class="big"></div> -->
+    <p>Hello world! This is my text shadow</p>
+
+    <style>
+        .big {
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            box-shadow: 20px 40px 10px 20px violet,
+                        10px 200px 5px 10px red,
+                        inset
+                        10px 20px 15px 15px rgb(170, 82, 82);
+        }
+
+
+        p {
+            text-shadow: 10px 20px 2px hotpink;
+        }
+        
+    </style>
+
+    <!-- box-shadow: x, y, blur radius, strech (became more than original), color -->
+    <!-- can be multiple shadows separated by , -->
+    <!-- first shadow will be ON next -->
+    <!-- , inset will make inner shadow from left top corner -->
+
+    <!-- The same about text-shadow but no inner shadow and no stretch -->
+
+</head>
+<body>
+
+
+    
+</body>
+</html>

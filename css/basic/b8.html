@@ -1,0 +1,43 @@
+<!--CSS Decoration (border, background, text-decoration, text-transform)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1 {
+            text-decoration: underline;
+            text-decoration: underline dotted red;
+            text-decoration: line-through  blink underline overline #FF3028;
+
+            font-size:  100px;
+        }
+        /* border: [border-width || border-style || border-color] | inherit */
+        /* styles:  dotted dashed solid double groove rigdge inset outset*/
+        /* 	
+            background: [<фон>, ]* <последний_фон> 
+            <фон> = [background-attachment || background-image || background-position || background-repeat] | inherit
+            <последний_фон> = [background-attachment || background-color || background-image || background-position || background-repeat] | inherit
+            background: url(images/hand.png) repeat-y #fc0;
+            background: url(images/hand.png) repeat-y, 
+                #fc0 url(images/bg-right.png) repeat-y 100% 0;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            text-transform: capitalize | lowercase | uppercase | none | inherit
+
+        */
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="id1">FIrst</div>
+    <div id="id2">Second</div>
+    <div id="id3">Third </div>
+    <div id="id4">Forth</div>
+    <div id="id5">Fifth</div>
+    <div id="id6">Sixth</div>
+</body>
+</html>
