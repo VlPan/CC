@@ -1,5 +1,11 @@
 /* Arrays (create, indexes, length, modification, built-in methods: sorting, filtering, search, iterating, static methods) */
 
+// !
+var arr = [1,2,3];
+arr.length = 1;
+arr[5] = 5;
+// [1, empty × 4, 5]
+
 // TODO: Question 1 create and indexes
 var arr1 = [5];
 var arr2 = new Array(5);
@@ -14,8 +20,11 @@ for(var key in arr2) {
 
 arr2.includes(undefined);
 arr2.length > Object.keys(arr2).length;
+
 // true
 // true
+
+
 
 // TODO: Question 2 indexes and length
 var arr = [1,2,3];
@@ -24,10 +33,18 @@ console.log(arr);
 // [1]
 
 // TODO: Question 3 reduce practice
-[1].reduce((prev, cur) => 15);
+[].reduce((prev, cur) => 15);
+// error
+[].reduce((prev, cur) => 15, 0);
+// 0
+[1].reduce((prev, cur) => { console.log('0'); return prev});
+// no console.logs
 // 1
-[1, 2].reduce((prev, cur) => 15);
+[1].reduce((prev, cur) => { console.log('0'); return prev}, 15);
+// log: 0
 // 15
+[1, 2].reduce((prev, cur) => prev);
+// 1
 [1].reduce((prev, cur) => 15, 0);
 // 15
 
@@ -43,11 +60,11 @@ console.log(arr2);
 
 // TODO: Question 5 slice vs splice
 var source = [1, 2, 3];
-var res = source.splice(1, 1, [3]);
+var res = source.splice(1, 1, 3);
 console.log(source);
 console.log(res);
 
-// [1, [1], 3]
+// [1, 3, 3]
 // [2]
 
 // TODO: Question 6 Array from of
@@ -70,6 +87,7 @@ var a = [...5];
 // how to make it work?
 
 // TODO: Question 9 - PRACTICE convert array to map
+// !
 var arr = [{id: 1, name: 'name1'}, {id: 2, name: 'name2'}];
 function convertToMap (arr) {
   return arr.reduce((acc, curr) => ({ 
@@ -77,6 +95,17 @@ function convertToMap (arr) {
     ...acc 
   }), {});
 }
+
+// TODO: Question 10 - find NaN in Array
+var arr = [1, NaN, 2];
+var isExist = arr.indexOf(NaN) > -1;
+console.log(isExist)
+
+// false
+arr.includes(NaN)
+// true
+console.log(arr.some((el) => Object.is(el, NaN))); 
+// true
 
 
 // var ar1r = [1];

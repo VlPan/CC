@@ -108,3 +108,7 @@ for await (const element of [1,2,3]) {
 // // promise pending
 // // after async
 // // How to se response?
+let p = new Promise((res) => res(213)).then(console.log);
+requestAnimationFrame(() => {
+          console.log('raf1');
+      })

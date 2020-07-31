@@ -1,6 +1,18 @@
 /* Expressions, Operators, Statements (literals, conditions, loops), destructuring, string templating */
 
+// !
+function f2(arg) {
+  if(arg != null && arg.a > 0 || arg.a === -10) {
+      console.log('done');
+  }
+}
+f2(null);
+// error
+// how to fix?
+// need () is second expression
+
 // TODO: 1 QUESTION Expression:
+//!
 var a = 1 || 12;
 console.log(a);
 a = 1 && 12;
@@ -14,8 +26,9 @@ console.log(a);
 
 console.log(12 + 1 * -1 + 12);
 // 23
-console.log(3 + 3 + !3 * 3)
-// 6
+console.log(!3 + 3 + 3 * 3)
+// 12
+//!
 console.log(3 > 2 > 1);
 // false
 
@@ -41,6 +54,7 @@ var {a: b, b, c: d} = params;
 // How many vars declared?
 // 2 b = 2; d = 3
 
+// !
 // 2) 
 // get inner c value
 var a = {
@@ -64,15 +78,16 @@ var name = 'Brandon';
 var age = 26;
  
 function greet(words, ...rest){
-  console.log(words);
-  console.log(rest);
+  console.log(words); // ["I'm ", ". I'm ", " years old.", raw: Array(3)]
+  console.log(rest); // 1, 2 (name, age)
 }
+//!
 greet`I'm ${name}. I'm ${age} years old.`;
 
 // words I'm . I'm years old
 // rest - our encapsulated values
 
-// TODO: 6 ADDITIONAL:
+// TODO: 6 ADDITIONAL:S
 // 1) switch
 let key = '10'
 switch (key) {

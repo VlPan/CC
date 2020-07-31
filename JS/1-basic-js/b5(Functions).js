@@ -12,15 +12,13 @@ function b() {console.log('b');}
 // a,c can not be called
 // c will not be defined after 10 line
 
-// TODO: Question 2 Invoke
+// TODO: Function return, length, body, type
 // ways to invoke the function
 function X (a,b,c) {
     console.log(X);
     console.log(X.length);
     console.log(typeof X);
 }
-x.call()
-x()
 
 // IIFE syntax and why we need them
 

@@ -1,7 +1,5 @@
 // Event Handling (DOM events, mouse, keyboard events, custom events, event phases, event listeners, propagation, delegating)
 
-
-
 // TODO: listen to event 3 ways
 // TODO: preventDefault
 // TODO: event delegation
@@ -10,6 +8,10 @@
 // TODO: click vs mousedown vs mouseup
 // TODO: mosuseEnter vs mouseHover
 // TODO: currentTarget vs Target
-// mouseover vs mouseenter
+// TODO: mouseover vs mouseenter
+
+ul -> li -> a
+
+(current target) -> ... -> target 
 
 

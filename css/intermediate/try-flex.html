@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1000px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rebeccapurple;
+        }
+        .ch {
+            height: 50px;
+            width: 50px;
+            flex-basis: 100px;
+        }
+        .ch:nth-child(2n + 1) {
+            border: 3px solid brown;
+        }
+        .ch:nth-child(2n) {
+            border: 3px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ch ch1">1</div>
+        <div class="ch ch2">2</div>
+        <div class="ch ch3">3</div>
+        <div class="ch ch4">4</div>
+    </div>
+</body>
+</html>

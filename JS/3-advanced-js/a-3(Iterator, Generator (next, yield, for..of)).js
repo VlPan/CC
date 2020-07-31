@@ -14,7 +14,13 @@ var g = generator();
 console.log(g.next());
 console.log(g.next(15));
 console.log(g.next());
-// {value: 1, done: false}
+
+/* 
+{value: 1, done: false}
+15
+{value: 17, done: false}
+{value: 3, done: false}
+*/
 
 
 // TODO: QUESTION  2 pracise

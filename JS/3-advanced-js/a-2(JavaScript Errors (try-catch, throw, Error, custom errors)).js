@@ -8,6 +8,7 @@
 // finaly vs return
 // window.onerror
 
+//!
 // TODO: Question 1: why error:
 a.b
 console.log(1);
@@ -29,7 +30,7 @@ try {
   } catch (e) {
     alert( 'Me error' );
 }
-
+//!
 // TODO: Question 4: custom errors
 class Err1 extends Error {}
 class Err2 extends Error {}

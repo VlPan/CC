@@ -48,3 +48,5 @@ is merely checking that the token in the cookie and the token in the request bod
 
 <meta name=”referrer” content=”no-referrer”>
 
+CSRF token
+what is curl?

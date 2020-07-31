@@ -21,14 +21,18 @@ console.log(isFinite('str'));
     false
 */
 // how to compare NaN
+// how to obj convert elements
+// typeof vs instanceof
 Object.is(NaN, NaN);
 
+console.log(function(){} instanceof Object);
 console.log(123 instanceof Number);
 console.log(new Number(123) instanceof Number);
 console.log('123' instanceof String);
 console.log(function(){} instanceof Function);
 console.log(typeof Array);
 console.log(typeof []);
+// true
 // false
 // true
 // false
@@ -50,6 +54,9 @@ console.log(!!'1');
 console.log(!!'');
 console.log(!!null);
 console.log(!!NaN);
+
+// TODO: Question 4: interesting expressions
+
 
 // /* Reference and primitive - dont touch this expression and make it true */
 // [] == '';

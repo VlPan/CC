@@ -11,6 +11,7 @@ var map = new Map([
   ]);
 
 map.get(NaN);
+// Map(1) {NaN => "n2"}
 
 for(num of map) {
     console.log(num);

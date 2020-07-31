@@ -6,8 +6,6 @@
 
 
 
-
-
 /* Location */
 window.location.href
 window.location.protocol
@@ -23,7 +21,8 @@ Location.assign() //  method causes the window to load and display the document 
 // when script origin !== Location.origin throw secure error
 Location.replace() // Same as assign but remove page from SessionHistory (user can not get back)
 Location.toString()
-Location.reload()
+Location.reload() // true - without cache
+
 
 // location vs history
 

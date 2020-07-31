@@ -252,3 +252,19 @@ new bound();
 // // {one: "one", three: "three"}
 // // {one: "one", three: "three"}
 // // {three: "three"}
+
+
+
+// class Logger {
+//   A = 1; // in instance
+//   B = 2;
+//   logb = () => {console.log(this.B)} // in instance
+//   logC() { // in proto
+//       console.log(this.A)
+//   }
+// constructor() {
+//   this.logA = () => { // in instance
+//     console.log(this.A);
+//   }
+// }
+// };

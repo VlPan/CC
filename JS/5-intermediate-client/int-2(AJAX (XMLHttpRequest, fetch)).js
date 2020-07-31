@@ -5,7 +5,27 @@
 // TODO: Q1 where fetch will trigger catch
 // internet network connection
 // cors failed
+
+// OPTIONS 
+
 // TODO: Q2 Why after reseving the response from fetch we still need to wait for body?
+async function postData(url = '', data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *client
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return await response.json(); // parses JSON response into native JavaScript objects
+}
 
 (async() => {
   let res = await getData();
@@ -50,8 +70,6 @@ function updateProgress (oEvent) {
 // A: cors req (XMLHttpReq) | fetch will be done without cookies (if not configured properly),
 // if you want to make it with the server should return 
 // Access-Control-Allow-Credentials and server must provide Access-Control-Allow-Origin with specific origin not "*"
-
-
 
 // TODO: XMLHttpReq API
 // TODO: fetch API

@@ -2,11 +2,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Defines article. -->
     <article></article>
@@ -24,11 +26,44 @@
     <section></section>
     <summary></summary>
 
+    <picture>
+        <source media="(max-width: 500px)" srcset="alt/image.img">
+        <img src="path/to/image.img">
+    </picture>
+
+    <!-- img vs picture - we can provide many srcset for different dimensions with picture -->
+
+    <fieldset>
+        <legend>Login:</legend>
+        User: <input type="text"><br>
+        password: <input type="password"><br>
+        <button>Login</button>
+    </fieldset>
+
+    <!-- you don’t worry of positioning elements but only to make up them -->
+    <progress max=100 value=13></progress>
+    <!-- progress is very customizable -->
+
+    <details></details>
+    <mark></mark>
+    <!-- Mark is a guy to highlight text - its better to use than span -->
+
+    <abbr title=” Do I Eat Today?”>DIET</abbr>
+     <!-- for abbreviations -->
+
+     <pre></pre>
+      <!-- Not html 5 but useful for debug template -->
+
+    <!-- Not Html 5 but very useful one -->
+    <base href="https://www.example.com/" target="_blank">
+
+
     <!-- WHy need html 5 tags? -->
     <!-- Accessibility and string example -->
     <!-- more readable -->
     <!-- search engines -->
-   
+
 
 </body>
+
 </html>

@@ -3,6 +3,7 @@
 
 // TODO: QUESTION 1 Creation
 // how to crate object?
+// !
 var o = new Object(1);
 var o2 = {};
 var o3 = Object.create(null)
@@ -11,6 +12,9 @@ console.log(o.__proto__ === Number.prototype);
 
 // TODO: QUESTION 2 keys, forIn, forOf, descriptor, call
 
+x = {1: 3, "1": 4, 1.0: 5} // x[1] == 5
+
+// !
 /*has own property and for IN */
 /* 1 Here is object */
 var obj = { 
