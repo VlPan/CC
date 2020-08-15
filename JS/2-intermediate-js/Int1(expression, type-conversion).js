@@ -57,6 +57,35 @@ console.log(!!NaN);
 
 // TODO: Question 4: interesting expressions
 
+/*
+ToPrimitive
+ToNumber
+ToString
+ToBoolean
+
+valueOf -> toString -> convert to number or according to operator
+*/
+
+1 - '0' + 2 // 3
+1 - '-0' + 2 // 3
+1 - '-0-' + 'NaN' // NaNNaN
+'b' + [NaN + 'ba', 'CC'] - {}; // NaN
+[] + (()=>{}); // ()=>{}
+[] + (()=>({})); // ()=>({})
+[] + (()=>({}))(); // [object Object]
+[] + (() => new Object(123))() // '123'
+{} + (() => new Object(123))() // 123
+(() => new Object(123))() + {} // 123[objectObject]
+({}).valueOf() + 1 // "[object Object]1"
+{} + 2 // 2
+typeof ({}).valueOf() + 2 // object2
++{} // NaN
++{}+[] // 'NaN'
++[] // 0
++[]+{} // 0[Object object]
++[10, 1]+{} // NaN[object Object]
+{} + [10] // 10
+
 
 // /* Reference and primitive - dont touch this expression and make it true */
 // [] == '';

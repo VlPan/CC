@@ -1,6 +1,6 @@
 var arr = [NaN]
-console.log(arr.indexOf(NaN));
-console.log(arr.includes(NaN));
+console.log(arr.indexOf(NaN)); // -1
+console.log(arr.includes(NaN)); // true
 
 var map = new WeakMap();
 

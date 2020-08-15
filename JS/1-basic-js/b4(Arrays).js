@@ -224,13 +224,13 @@ console.log(arr.some((el) => Object.is(el, NaN)));
 // // 2 1 0 4
 // // 4
 
-// /* SORT */
-// // default behavior convert values to string and compare them as Unicode characters
-// // compare function (CF) => (0<) a , b
-// // compare function (CF) => (=0) no changes for each other
-// // compare function (CF) => (>0) b, a
-// // a.localeCompare(b) // alphabit for local symbols
-// // Mutate array
+/* SORT */
+// default behavior convert values to string and compare them as Unicode characters
+// compare function (CF) => (0<) a , b
+// compare function (CF) => (=0) no changes for each other
+// compare function (CF) => (>0) b, a
+// a.localeCompare(b) // alphabit for local symbols
+// Mutate array
 
 // // can i make this magic?? var a = [...5] // [1,2,3,4,5]
 
