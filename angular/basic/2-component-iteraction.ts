@@ -1,7 +1,16 @@
+
+// Q1 data binding (input, output, two ways)
+// Q2 by services
+// Q3 what if we pass streams as inputs what we should be aware of?
+// Q4 What is one directional dataflow
+// additional
+//
+
+
 // parent -> child
 
 
-parent: 
+parent:
 `
 title = 'title;
 <child
@@ -17,7 +26,7 @@ child:
 <input type="text" [(ngModel)]="myInt">
 `;
 
-// make it work: 
+// make it work:
 parent_the_same:
 
 
@@ -33,4 +42,4 @@ onInput($event) {
 <input type="text" <input type="text" [(ngModel)]="myInt" (input)="onInput($event)">>
 `;
 
-// can I place emit in DoCheck method?
+

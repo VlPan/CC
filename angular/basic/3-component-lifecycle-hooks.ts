@@ -1,6 +1,9 @@
-// what the difference between constructor and onInit?
+// Q1 what the difference between constructor and onInit?
+// Q2 Why we have init and content
+// Q3 Why do we have doCheck and onChanges
+
 // parent -> child
-// how will LH will be called? 
+// how will LH will be called?
 `
 <parent>
     <child> </child>
@@ -23,7 +26,7 @@
 // P AfterViewInit
 // P AfterViewChecked
 
-// In development mode there will also: 
+// In development mode there will also:
 // P DoCheck
 // P AfterContentChecked
 // C DoCheck
@@ -31,17 +34,17 @@
 // C AfterViewChecked
 // P AfterViewChecked
 
-// what if I provide input from parent to child? 
+// what if I provide input from parent to child?
 `
 <parent>
     <child [myInput]="variable"> </child>
 </parent>
 `;
-// will it be accessible and defined in constructor? 
+// will it be accessible and defined in constructor?
 // NO
 // will it be accessible and defined in onChanges?
 // YES
-// Okay component initialized. What if I update input now? What will be called 
+// Okay component initialized. What if I update input now? What will be called
 // P Do Check
 // P After Content Checked
 // C onChanges
