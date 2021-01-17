@@ -1,0 +1,50 @@
+As an agile team we must focus on value and customer first,
+As humans our natural reaction to unpredictable situations is fight or flight response 
+So when customer is angry we need to prevent flight and fight response first.
+Because avoiding the problem or defending yourself is two bad strategies that we should not use in this case.
+Secondly, we need to understand that customer has rational and irrational motives to be angry, in many cases he has both at the same time.
+So the first thing we should do is to calm down the customer by saying something like:
+
+I'm really sorry that it happened.
+I understand that this is irritating,
+We will definitely fix it as quickly as possible and find the root cause to prevent it in the future
+There are possible solutions for this:
+
+It shows the customer that we really care about the problem.
+
+Also we need to remember about ethical line. If customer starts shouting at us and threaten us, we should immediately escalate this problem to manager.
+
+If customer is still angry even if we did everything we could, it probably means that the customer is angry because of irrational reasons.
+In this case we should also escalate this problem up to a manager. He can arrange meeting, and with 3rd party it is easy to solve.
+
+Situation #1
+The 'failed' Sprint.
+
+The only sprint which can be failed is when we did not learn from it.
+We need to settle the clear consensus between team and customer that we do not make promises
+We only make predictions, not promiseses.
+
+Why do we need such consensus?
+Because our job is almost impossible to estimate correctly.
+For example our team member can suddenly gets sick during the sprint,
+and we have a lot of non-functional requirements that customer do not see.
+
+Once such consensus is settled We should not work overtime without extra pay or days off in the future.
+But if this consensus is not set yet, we should meet customer expectation and work overtime. But only once. Then we must set this consensus in Sprint retrospective.
+
+Situation #2
+customer is angry because his production version of Application is not working.
+
+When customer call use standart method:
+escape the fight and flight response and use the magic phrase:
+
+I'm really sorry that it happened.
+I understand that this is irritating,
+We will definitely fix it as quickly as possible and find the root cause to prevent it in the future
+There are possible solution for this:
+
+1) We will revert production to preveous version immediately.
+2) We will fix bug ASAP.
+3) We will find the root cause of the problem and cover it with appropriate quality gates to prevent it in the future.
+
+I think customer will be glad that you know exactly what to do in such situation.

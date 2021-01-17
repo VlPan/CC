@@ -1,0 +1,48 @@
+Values:
+1) The people are more important that processes
+2) Ability to change is more important than plan
+3) Interaction with customer is necessary
+
+Roles:
+1) Team
+2) Bussiness owner
+3) Scrum master
+
+Ceremonies:
+1) Grooming, 
+2) Planning,
+3) Daily meetings,
+4) Overview
+5) Retrospectives
+
+Artifacts:
+1) Backlog
+2) Product increment
+3) Sprint
+
+Basics:
+small teams 3-7 members
+short sessions 1-3 weeks
+pocker planning estimation
+Freeze sprints
+velocity
+story points
+
+Additional:
+Sprint can be terminated by product owner
+INVEST SCHEMA WHILE MAKING STORIES
+I - Independed
+N - Negotiatable
+V - Valuable
+E - Estimatable
+S - short
+T - testable
+
+User stories, Epics, requirements, bugs, all other types of work actions.
+As a role, I want feature, to have Values
+Split tasks by CRUD
+
+Release plans and Sprint plans is different activities
+Update the release plan at the end of the sprints
+
+Teams should be autonomated - they decide HOW to do, product manager only tell what and make priorities
