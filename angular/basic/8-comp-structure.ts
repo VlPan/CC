@@ -4,6 +4,12 @@
 // global styles
 // ::ng-deep
 
+
+// styleUrls
+// template
+// templateUrls
+// viewEncapsulation
+
 // definning and writing a basic component structure
 // animations
 // styleEncapsulation (emulate, shadowDOM, none)

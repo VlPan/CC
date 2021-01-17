@@ -4,6 +4,11 @@ Variables, Values, Types (number, string, boolean, object, null, undefined, Symb
 // why null and undefined - two types
 
 
+// var a = 5
+// window.a // 5
+// let b = 5
+// window.b // undefined
+
 var b = 10;
 var a = b = 5;
 // a = 5, b = 5 (assign order)
@@ -94,6 +99,15 @@ a = b;
 // WHAT IF I make if instead of a function:
 // WHAT IF I replace var with let??
 
+function foo() {
+  var a = b = 0;
+}
+
+foo();
+let b;
+// Cannot access 'b' before initialization
+
+
 // TODO: 4 QUESTION - number
 0.1 + 0.2
 // WHY
@@ -150,6 +164,11 @@ typeof (() => {})()
 let n = new Number('abc') 
 // what happend?
 // Object with Nan
+Number.isNaN(n);
+isNaN(n);
+// false
+// true
+
 Number.isNaN('as12');
 isNaN('as12');
 // false - more reliable - no convertion

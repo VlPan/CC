@@ -63,6 +63,7 @@ fn();
 
 // 10 30 20
 
+var name = 'Bob';
 
 function a() {
   var name = 'John Doe';

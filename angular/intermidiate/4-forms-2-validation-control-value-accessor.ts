@@ -6,7 +6,7 @@
 
 /*
 
-@component({
+@Component({
     template: '<input [(ngModel)]="value"/>local: {{val}}',
     selector: 'custom-input',
     providers: [{

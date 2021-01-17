@@ -1,4 +1,4 @@
-/* Advanced Functions (arguments, 'this' scope, call, apply methods) */
+// /* Advanced Functions (arguments, 'this' scope, call, apply methods) */
 
 
 // TODO: Question 1 arguments

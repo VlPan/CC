@@ -18,7 +18,6 @@ function getCommentsOfNode(n) {
             else if(n.nodeType === 1) {
                 getCommentsOfNode(n);
             }
-
          })
     }
    

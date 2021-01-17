@@ -113,20 +113,20 @@ obj.a; // 3
 // BAD: desriptors and methods dont preserve
 
 // CLONE EXERCIZE with method preserve
-// var a = {getSmt: () => console.log(12), b: 12, c: {v: 11}};
+var a = {getSmt: () => console.log(12), b: 12, c: {v: 11}};
 
-// function makeDeepClone(obj) {
-//     var res = {};
-//     console.log('makeDeepClone', obj);
-//     for(var key in obj) {
-//         var value = obj[key];
-//         res[key] = value instanceof Object && Object.keys(value).length > 0 ? makeDeepClone(value) : value;
-//     }
-//     return res;
-// }
+function makeDeepClone(obj) {
+    var res = {};
+    console.log('makeDeepClone', obj);
+    for(var key in obj) {
+        var value = obj[key];
+        res[key] = value instanceof Object && Object.keys(value).length > 0 ? makeDeepClone(value) : value;
+    }
+    return res;
+}
 
-// var res = makeDeepClone(a);
-// console.log(res);
+var res = makeDeepClone(a);
+console.log(res);
 
 
 

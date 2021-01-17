@@ -1,5 +1,16 @@
 
 
+// ts advantages
+// objects as const
+// generics
+// Util types
+// never
+// any, unknown
+// abstract class vs interface
+// what interdace comppile into
+
+let a222: any;
+a222.chartAt()
 
 // Q1
 

@@ -8,4 +8,6 @@
 // basic services structure
 
 // pipe: values1: values2
-//
+
+
+// lifecycle hooks in pipes

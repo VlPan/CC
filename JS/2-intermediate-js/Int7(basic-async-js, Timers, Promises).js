@@ -69,6 +69,11 @@ child.addEventListener('click', () => { console.log(2); f(); });
 // what if child.click() ?
 // 2 → 1 → Promise → Promise → rAF → rAF → setTimeout → setTimeout
 
+
+let p = new Promise((res, rej) => {
+  res(12);
+});
+
 p
   .catch((r) => console.log(r))
   .then((r)=> console.log(r))
@@ -76,6 +81,8 @@ p
   .then((arg) => console.log(arg));
 
 p.then(() => console.log('second'))
+
+
 
   // second
   // 12 

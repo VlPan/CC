@@ -3,7 +3,18 @@
 
 // 1: router basic configuration
 // RouterModule.forRoot(routes);
-// routes = {path: component: fullMath redirectTo: canActivate canDeactivate canLoad resolve outlet, children}
+// routes = {
+// 	path:
+// 	component:
+// 	fullMath
+// 	redirectTo:
+// 	canActivate
+// 	canDeactivate
+// 	canLoad
+// 	resolve
+// 	outlet,
+// 	children
+// }
 // router-outlet
 // 2: navigation in lazy loaded module (loadChildren and create forChild with '' route)
 // 3: how to navigate from view  and from component logic

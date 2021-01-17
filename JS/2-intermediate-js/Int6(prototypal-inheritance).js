@@ -8,7 +8,7 @@ function A() {}
 function B() {}
 A.prototype.log = function() {console.log('LOG');}
 B.prototype = Object.create(A.prototype);
-B.constructor // ??
+B.constructor // ?? == Function
 B.prototype.constructor = B; // WHY?
 
 var b = new B();
