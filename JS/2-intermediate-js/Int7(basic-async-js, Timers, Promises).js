@@ -27,7 +27,7 @@ console.log(4);
 // TODO: Question 2 promise chain
 let p = new Promise((res, rej) => {
   res(1);
-  rej()
+  rej();
 });
 
 p
@@ -38,6 +38,13 @@ p
 p.then(console.log)
 
 // 1,1, undefined
+
+setTimeout(() => { 
+  console.log(1);
+  Promise.resolve(3).then(console.log)
+})
+setTimeout(() => console.log(2));
+
 
 // can i do then after catch. why?
 // yes

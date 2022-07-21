@@ -52,7 +52,7 @@ console.log(!![]);
 console.log(!!{});
 console.log(!!'1');
 console.log(!!'');
-console.log(!!null);
+console.log(!!null);if()
 console.log(!!NaN);
 
 // TODO: Question 4: interesting expressions

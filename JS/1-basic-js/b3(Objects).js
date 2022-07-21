@@ -17,7 +17,7 @@ x = {1: 3, "1": 4, 1.0: 5} // x[1] == 5
 // !
 /*has own property and for IN */
 /* 1 Here is object */
-var obj = { 
+var obj = {
     a:1,
     b:2
 }

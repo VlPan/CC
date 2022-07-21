@@ -4,6 +4,10 @@ Variables, Values, Types (number, string, boolean, object, null, undefined, Symb
 // why null and undefined - two types
 
 
+
+// abubakr
+// 
+
 // var a = 5
 // window.a // 5
 // let b = 5
