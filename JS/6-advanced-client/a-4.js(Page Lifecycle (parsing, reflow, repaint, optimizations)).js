@@ -1,14 +1,7 @@
 // Page Lifecycle (parsing, reflow, repaint, optimizations)
 
 // TODO: Q1: wait for 5 seconds. Will button appear 
-var btn = document.createElement('button');
-btn.textContent = 'MyVtn'
-
-c.appendChild(btn);
-
-const fiveSecondsLater = new Date().getTime() + 5000;
-while (new Date().getTime() < fiveSecondsLater) {}
-btn.style.display = 'none';
+host
 
 // what will happend if I trigger this script??
 // render DOM. wait 5 seconds. No button on screen

@@ -6,8 +6,10 @@
 // additional
 //
 
-
 // parent -> child
+
+// todo: pass data from parent to child
+// todo: from child to parent
 
 
 parent:

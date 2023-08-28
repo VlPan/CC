@@ -9,8 +9,20 @@
 // abstract class vs interface
 // what interdace comppile into
 
+// todo: Ts best practices
+// todo: any vs unknown
+
+// interface vs abstract class
+
+// what interface compile
+// generic types
+// utility types
+
 let a222: any;
 a222.chartAt()
+
+interface vs abstract class {}
+
 
 // Q1
 
@@ -71,7 +83,8 @@ Object.create("oops");    // Error
 
 // object vs Object vs {}
 
-// Object (uppercased) describes functionality that is common to all JavaScript objects. That includes the toString() and the hasOwnProperty() methods, for example.
+// Object (uppercased) describes functionality that is common to all JavaScript objects.
+// That includes the toString() and the hasOwnProperty() methods, for example.
 
 
 // const obj = {};
@@ -191,6 +204,8 @@ class never<never> {
 const whats = new never<string>();
 whats.never = "";
 
+
+// [{id: 1, ...rest}, {id: 2, ...rest}] => {1: {id: 1, ...rest}, 2: {id: 2, ...rest}};
 
 
 

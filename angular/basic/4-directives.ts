@@ -2,6 +2,14 @@ creating_behavior_directive:
 // Q1: When you will decide to create your own structural/behavior directive? Why not using simple input/ouputs, or helpers, etc
 // Q2: <div *myDir="1000; let helloWorld, let something = templateValue"> {{helloWorld}} </div>  It it valid? and what should I do to make it work and display 1000 inside diff
 // exportAs
+// trackBy
+
+// ng-container vs ng-template
+
+// structural vs behavior (examples of str directives in ang)
+// ng-template
+// *ngTemplateOutlet
+// trackBy
 
 `
 <div myClicker="yellow" #clicked=myClicker>Hello world</div>
@@ -60,7 +68,43 @@ creating_structural_directive:
 
 // writing your own ngFor
 
+// trackBy
+
 /*
 
 
 */
+
+// NgNonBindable
+
+/*
+constructor(
+  private templateRef: TemplateRef<any>,
+  private viewContainer: ViewContainerRef) { }
+
+*/
+
+// this.viewContainer.createEmbeddedView(this.templateRef);
+// this.viewContainer.clear();
+
+
+/*
+<div *ngIf="hero" class="name">{{hero.name}}</div>
+*/
+
+
+/*
+
+<ng-template [ngIf]="hero">
+  <div class="name">{{hero.name}}</div>
+</ng-template>
+
+*/
+
+// Angular does not create a real <ng-template> element, 
+// instead rendering only the <div> and a comment node placeholder to the DOM.
+
+// <!--bindings={
+// 	"ng-reflect-ng-if": "[object Object]"
+//   }-->
+//   <div _ngcontent-c0>Mr. Nice</div>

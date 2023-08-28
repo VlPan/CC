@@ -4,11 +4,16 @@
 // global styles
 // ::ng-deep
 
+// host selector. host-content selector
+
 
 // styleUrls
 // template
 // templateUrls
 // viewEncapsulation
+// changeDetection
+// providers
+// viewProviders
 
 // definning and writing a basic component structure
 // animations
@@ -19,3 +24,7 @@
 // changeDetection
 // Component extends Directive did you know this?
 // entryComponents - with evy it is not neccesary anymore
+
+@Component({
+	
+})

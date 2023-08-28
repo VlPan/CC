@@ -11,3 +11,7 @@
 
 
 // lifecycle hooks in pipes
+
+
+// isOneOf(object, types)
+// object.type in types => true

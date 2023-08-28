@@ -52,3 +52,7 @@
 // C AfterContentChecked
 // C AfterViewChecked
 // P AfterViewChecked
+
+// todo: onInit vs constructor
+// todo: doCheck vs ngOnChanges
+// detectChanges, detach, reatach, runOutsideAngular
